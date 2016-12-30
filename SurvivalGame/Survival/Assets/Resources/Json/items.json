@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "index": "0",
+      "myName": "rock",
+      "health": "40",
+      "img": "Sprites/WorldItems/rock"
+
+    },
+    {
+      "index": "1",
+      "health": "10",
+      "myName": "stick",
+      "img": "Sprites/WorldItems/stick"
+
+    },
+    {
+      "index": "2",
+      "health": "1",
+      "myName": "leaf",
+      "img": "Sprites/WorldItems/leaf"
+    }
+    ,{
+      "index": "3",
+      "health": "1",
+      "myName": "fiber",
+      "img": "Sprites/WorldItems/fiber"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+	"items" : [
+		{
+			"name":"rock", 
+			"health":"40"
+		},
+		{
+			"name":"stick", 
+			"health":"10"
+		},
+	]
+}
+
+// name
+// health
+// lifespan
+// edible
+// craftable
