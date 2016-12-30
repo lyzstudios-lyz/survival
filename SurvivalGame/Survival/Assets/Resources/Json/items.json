@@ -19,12 +19,18 @@
       "health": "1",
       "myName": "leaf",
       "img": "Sprites/WorldItems/leaf"
-    }
-    ,{
+    },
+    {
       "index": "3",
       "health": "1",
       "myName": "fiber",
       "img": "Sprites/WorldItems/fiber"
+    }
+    ,{
+      "index": "4",
+      "health": "20",
+      "myName": "rope",
+      "img": "Sprites/WorldItems/rope"
     }
   ]
 }
