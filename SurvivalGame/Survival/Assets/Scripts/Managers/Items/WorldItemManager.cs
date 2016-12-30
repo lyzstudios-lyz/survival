@@ -25,9 +25,6 @@ public class WorldItemManager : MonoBehaviour {
 
         CreateWorldItem(0);
         CreateWorldItem(1);
-        CreateWorldItem(2);
-        CreateWorldItem(3);
-        CreateWorldItem(3);
     }
 
     /// <summary>

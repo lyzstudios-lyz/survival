@@ -4,33 +4,63 @@
       "index": "0",
       "myName": "rock",
       "health": "40",
-      "img": "Sprites/WorldItems/rock"
-
+      "img": "Sprites/WorldItems/rock",
+      "weight": "1",
+      "isFood": "false",
+      "isForCrafting": "true",
+      "isPerishable": "false",
+      "canDoDamage": "true",
+      "canHarvest": "true",
+      "canGrow": "false",
+      "canCatchFire": "false",
+      "canBeWet": "false",
+      "wetness": "0",
+      "canBeFrozen": "false",
+      "frozeness": "0",
+      "rawness": "100",
+      "canBeSmelted": "false",
+      "canBeStacked": "true",
+      "canGiveHealth": "false",
+      "canProvideWarmth": "false",
+      "canProvideLight": "false",
+      "canProvideCooling": "false",
+      "canPoison": "false",
+      "canHeal": "false",
+      "isEmpty": "false",
+      "isLiquid": "false",
+      "tastesGood": "false",
+      "holdsOtherItems": "false"
     },
     {
       "index": "1",
       "health": "10",
       "myName": "stick",
-      "img": "Sprites/WorldItems/stick"
-
-    },
-    {
-      "index": "2",
-      "health": "1",
-      "myName": "leaf",
-      "img": "Sprites/WorldItems/leaf"
-    },
-    {
-      "index": "3",
-      "health": "1",
-      "myName": "fiber",
-      "img": "Sprites/WorldItems/fiber"
-    }
-    ,{
-      "index": "4",
-      "health": "20",
-      "myName": "rope",
-      "img": "Sprites/WorldItems/rope"
+      "img": "Sprites/WorldItems/stick",
+      "weight": "0.5",
+      "isFood": "false",
+      "isForCrafting": "true",
+      "isPerishable": "false",
+      "canDoDamage": "true",
+      "canHarvest": "true",
+      "canGrow": "false",
+      "canCatchFire": "false",
+      "canBeWet": "false",
+      "wetness": "0",
+      "canBeFrozen": "false",
+      "frozeness": "0",
+      "rawness": "100",
+      "canBeSmelted": "false",
+      "canBeStacked": "true",
+      "canGiveHealth": "false",
+      "canProvideWarmth": "false",
+      "canProvideLight": "false",
+      "canProvideCooling": "false",
+      "canPoison": "false",
+      "canHeal": "false",
+      "isEmpty": "false",
+      "isLiquid": "false",
+      "tastesGood": "false",
+      "holdsOtherItems": "false"
     }
   ]
 }

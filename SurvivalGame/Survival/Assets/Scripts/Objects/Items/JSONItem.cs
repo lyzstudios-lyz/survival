@@ -17,9 +17,4 @@ public class JSONItem
         return JsonUtility.FromJson<JSONItem>(jsonString);
     }
 
-    
-    public override string ToString()
-    {
-        return myName +"-"+Environment.NewLine+"Index: "+index + ", Health: "+health + ", IMG: " + img;
-    }
 }
