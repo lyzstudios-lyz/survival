@@ -1,0 +1,26 @@
+ 
+-8. #Use case for items 
+
+ 
+-1. can be picked it up if not too much weight and player has enough room 
+-2. can be eaten if it is edible 
+-3. can be crafted with if possible 
+-4. can be perishable 
+-5. can do damage to enemy 
+-6. can do damage to self 
+-7. can harvest other items 
+-8. can grow 
+-9. can be on fire 
+-10. can be wet/dried 
+-11. can be frozen/thawed 
+-12. can be cooked/raw 
+-13. can be smelted 
+-14. can be stacked
+-15. can give health
+-16. can eleminated hunger 
+-17. can eleminated thirst
+-18. can provide warmth 
+-19. can provide light
+-20. can provide cooling 
+-21. can poison 
+-22. can heal 
