@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Managers\Items\WorldItemManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Objects\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Objects\Items\JSONItem.cs" />
     <Compile Include="Assets\Scripts\Objects\Items\JSONItems.cs" />

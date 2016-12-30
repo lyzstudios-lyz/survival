@@ -3,6 +3,7 @@ using System.Collections;
 using System.IO;
 using System.Text;
 using System;
+using UnityEngine.UI;
 
 public class WorldItemManager : MonoBehaviour {
 
@@ -14,7 +15,7 @@ public class WorldItemManager : MonoBehaviour {
     // not on player, in bag, etc
     private JSONItems itemList = new JSONItems();
 
-    private String jsonPath = "Assets/Resources/Json/items.json";
+    private String jsonItemPath = "Assets/Resources/Json/items.json";
 
     string jsonString;
 
@@ -32,7 +33,8 @@ public class WorldItemManager : MonoBehaviour {
     /// </summary>
     private void WorldItemListInit()
     {
-        if (LoadJSON(jsonPath))
+        // if the item.json was able to be loaded
+        if (LoadJSON(jsonItemPath))
         {
             Debug.Log("** The World Items have been saved to a string! **");
             // create an Item list from the json file
@@ -109,16 +111,42 @@ public class WorldItemManager : MonoBehaviour {
         newItem.myName = itemList.items[index].myName;
         newItem.index = itemList.items[index].index;
         newItem.health = itemList.items[index].health;
+        newItem.weight = itemList.items[index].weight;
+        newItem.isFood = itemList.items[index].isFood;
+        newItem.isForCrafting = itemList.items[index].isForCrafting;
+        newItem.isPerishable = itemList.items[index].isPerishable;
+        newItem.canDoDamage = itemList.items[index].canDoDamage;
+        newItem.canHarvest = itemList.items[index].canHarvest;
+        newItem.canGrow = itemList.items[index].canGrow;
+        newItem.canCatchFire = itemList.items[index].canCatchFire;
+        newItem.canBeWet = itemList.items[index].canBeWet;
+        newItem.wetness = itemList.items[index].wetness;
+        newItem.canBeFrozen = itemList.items[index].canBeFrozen;
+        newItem.frozeness = itemList.items[index].frozeness;
+        newItem.rawness = itemList.items[index].rawness;
+        newItem.canBeSmelted = itemList.items[index].canBeSmelted;
+        newItem.canBeStacked = itemList.items[index].canBeStacked;
+        newItem.canGiveHealth = itemList.items[index].canGiveHealth;
+        newItem.canProvideWarmth = itemList.items[index].canProvideWarmth;
+        newItem.canProvideLight = itemList.items[index].canProvideLight;
+        newItem.canProvideCooling = itemList.items[index].canProvideCooling;
+        newItem.canPoison = itemList.items[index].canPoison;
+        newItem.canHeal = itemList.items[index].canHeal;
+        newItem.holdsOtherItems = itemList.items[index].holdsOtherItems;
+        newItem.isEmpty = itemList.items[index].isEmpty;
+        newItem.isLiquid = itemList.items[index].isLiquid;
+        newItem.tastesGood = itemList.items[index].tastesGood;
+        
 
-        // assign new sprite image to the object
-        SpriteRenderer spriteRenderer = newObject.GetComponent<SpriteRenderer>();
+    // assign new sprite image to the object
+    SpriteRenderer img = newObject.GetComponent<SpriteRenderer>();
         Sprite testSprite = Resources.Load<Sprite>(itemList.items[index].img);
         if(testSprite != null)
         {
-            spriteRenderer.sprite = testSprite;
+            img.sprite = testSprite;
         } else
         {
-            spriteRenderer.sprite = defaultSprite;
+            img.sprite = defaultSprite;
         }
 
 
