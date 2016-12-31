@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour {
 
         Vector3 pos = transform.position;
 
-        if (transform.GetComponent<Camera>().fieldOfView > 68 && transform.GetComponent<Camera>().fieldOfView < 100)
+        if (transform.GetComponent<Camera>().fieldOfView >= 68 && transform.GetComponent<Camera>().fieldOfView <= 100)
         {
             transform.GetComponent<Camera>().fieldOfView += mouseWheel * 50;
         } else if(transform.GetComponent<Camera>().fieldOfView < 68 && mouseWheel > 0)
