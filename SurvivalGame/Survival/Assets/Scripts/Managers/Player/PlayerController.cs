@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
     // the speed for the player to move
     public float speed = 10f;
 
+    public float runMultiplier = 1.3f;
+
     // the horizontal direction the player has press
     float horInput;
     // the vertical direction the player has press
@@ -34,9 +36,18 @@ public class PlayerController : MonoBehaviour {
     void MovePlayerByInput()
     {
         Vector3 pos = transform.position;
-
-        float xVelocity = (horInput * speed) * Time.deltaTime;
-        float yVelocity = (vertInput * speed) * Time.deltaTime;
+        float xVelocity;
+            float yVelocity;
+        if (Input.GetAxis("Run") == 0)
+        {
+            xVelocity = (horInput * speed) * Time.deltaTime;
+            yVelocity = (vertInput * speed) * Time.deltaTime;
+        } else
+        {
+            xVelocity = (horInput * (speed * runMultiplier)) * Time.deltaTime;
+            yVelocity = (vertInput * (speed * runMultiplier)) * Time.deltaTime;
+        }
+        
         
         this.transform.GetComponent<Rigidbody2D>().velocity = new Vector3(xVelocity, yVelocity, 0);
     }
